@@ -1,0 +1,118 @@
+/* Base styles */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #ff5a5f;
+}
+
+.slogan {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 1.5em;
+}
+
+ion-list {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1.5em;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  color: lightskyblue;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  margin-top: 1em;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20.5px;
+  background-color: #ff5a5f;
+  color: white;
+}
+
+.signup-button {
+  margin-top: 1em;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  //border: 2px solid #ff5a5f;
+  color: #ff5a5f;
+  background: none;
+}
+
+.back-button {
+  margin: 1em;
+  border-radius: 20px;
+  background-color: #ff5a5f;
+  color: white;
+}
+
+.head {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Media Queries for different screen sizes */
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 1.5em;
+  }
+
+  .slogan {
+    font-size: 0.9em;
+  }
+
+  .login-button, .signup-button {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .heading {
+    font-size: 1.75em;
+  }
+
+  .slogan {
+    font-size: 1em;
+  }
+
+  .login-button, .signup-button {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .heading {
+    font-size: 2em;
+  }
+
+  .slogan {
+    font-size: 1em;
+  }
+
+  .login-button, .signup-button {
+    width: 100%;
+  }
+}

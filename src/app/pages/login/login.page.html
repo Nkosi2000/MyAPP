@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="back-button" routerLink="/home">Back</ion-button>
+    </ion-buttons>
+    <ion-title class="head" >Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <div class="login-container">
+    <h1 class="heading">Med Dash</h1>
+    <p class="slogan">Medicine at your doorstep</p>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" required  placeholder="example: ...John..Smith..775...@gmail.com"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" required placeholder="example: 1me2345#"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-text color="primary">
+      <a class="forgot-password" routerLink="/forgotpassword">Forgot Password?</a>
+    </ion-text>
+    <ion-button expand="full" class="login-button">Login</ion-button>
+    <ion-button expand="full" fill="outline" class="signup-button" routerLink="/signup">Sign Up</ion-button>
+  </div>
+</ion-content>

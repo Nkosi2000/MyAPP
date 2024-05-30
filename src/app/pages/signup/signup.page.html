@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="back-button" routerLink="/home">Back</ion-button>
+    </ion-buttons>
+    <ion-title class="head">Signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <div class="signup-container">
+    <h1 class="heading">Med Dash</h1>
+    <p class="slogan">Medicine at your doorstep</p>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">First Name</ion-label>
+        <ion-input type="text" required placeholder="example: John" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Last Name</ion-label>
+        <ion-input type="text" required placeholder="example: Smith"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">ID Number</ion-label>
+        <ion-input type="text" required placeholder="example: 000 000 000 0000"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Home Address</ion-label>
+        <ion-input type="text" required placeholder="example: 10441 Pinetown Gardner Road"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email Address</ion-label>
+        <ion-input type="email" required placeholder="example: ...John..Smith..775...@gmail.com"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Cellphone Number</ion-label>
+        <ion-input type="tel" required placeholder="example: 083 913 3030"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" required placeholder="example: 1me2345#"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Confirm Password</ion-label>
+        <ion-input type="password" required placeholder="example: 1me2345#"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="full" class="create-profile-button">Create Profile</ion-button>
+    <p class="terms">
+      By signing up you agree to the 
+      <b>Terms of Service</b>, 
+      <b>Privacy Policy</b>, 
+      and receiving promotional offers.
+    </p>
+  </div>
+</ion-content>
