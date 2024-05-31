@@ -78,7 +78,7 @@
     </div>
   </div>
 
-  <ion-content>
+  <div>
     <swiper-container
       (slidechange)="swiperSlideChanged($event)"
       [loop]="true"
@@ -87,6 +87,32 @@
         <img [src]="image" alt="advert_images"/>
       </swiper-slide>
     </swiper-container>
+  </div>
+
+  <ion-content>
+  <div><p>Discount Offers</p></div>
+  <div class="Board">
+    <ion-title class="BrdTitle">How it works</ion-title>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img [src]="image1" alt="Phone">
+        <p>1. Search for the medications and health products you need.</p>
+      </div>
+      <div class="grid-item">
+        <img [src]="image2" alt="Hand_Press">
+        <p>2. Purchase medication and health products in a click of a button.</p>
+      </div>
+      <div class="grid-item">
+        <img [src]="image3" alt="Delivery_guy">
+        <p>3. Track your orders.</p>
+      </div>
+      <div class="grid-item">
+        <img  [src]="image4" alt="Package">
+        <p>4. Collect your order at your doorstep.</p>
+      </div>
+    </div>
+  </div>
+  
   </ion-content>
 
   <ion-footer>

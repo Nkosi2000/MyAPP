@@ -22,6 +22,19 @@ export class HomePage {
     'https://livinghealthy24.com/manager/assets/images/offer4.png',
   ];
 
+  image1 = [
+    'https://www.flaticon.com/free-icon/chat-bubbles_13874995?k=1717093363603&log-in=google',
+  ];
+  image2 = [
+    'https://www.flaticon.com/free-icon/yes_1582114?term=hand+press&page=3&position=26&origin=search&related_id=1582114',
+  ];
+  image3 = [
+    'https://www.flaticon.com/free-icon/delivery-boy_2331708?term=delivery+motorbike&page=1&position=28&origin=search&related_id=2331708',
+  ];
+  image4 = [
+    'https://www.flaticon.com/free-icon/delivery-box_6615107?term=delivery+package&page=1&position=6&origin=search&related_id=6615107',
+  ];
+
   navigateToLogin() {
     this.router.navigate(['/login.page']);
   }
