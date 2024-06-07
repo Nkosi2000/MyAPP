@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HomeSecondPage } from './home-second.page';
 import { IonicModule } from '@ionic/angular';
-import { HomePage } from './home.page';
 
-describe('HomePage', () => {
-  let component: HomePage;
-  let fixture: ComponentFixture<HomePage>;
+describe('HomeSecondPage', () => {
+  let component: HomeSecondPage;
+  let fixture: ComponentFixture<HomeSecondPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HomePage],
+      declarations: [HomeSecondPage],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HomePage);
+    fixture = TestBed.createComponent(HomeSecondPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

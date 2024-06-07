@@ -1,0 +1,153 @@
+/* Base styles */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  background: none;
+  color: rgb(21, 133, 202);
+  text-align:center;
+}
+
+.menu:hover{
+  transition: background-color 0.3s ease, #da1a20 0.3s ease;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: darkblue;
+}
+
+.slogan {
+  font-size: 1em;
+  color: #ff5a5f;
+  margin-bottom: 1.5em;
+}
+
+ion-list {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1.5em;
+}
+
+ion-list a {
+  color: rgb(21, 133, 202);
+  text-decoration: none;
+}
+
+ion-list a:hover {
+  color:  #da1a20;
+  text-decoration:underline;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#signout-btn{
+  width: 85%;
+  background: rgb(21, 133, 202);
+  color: black;
+  margin:5px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  border-radius: 45px;
+}
+
+#signout-btn:hover {
+  color:white;
+  background: #da1a20;
+  transition: background-color 0.3s ease, white 0.3s ease;
+}
+
+.save-button {
+  margin-top: 1em;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  background: lightskyblue;
+  color: white;
+}
+
+.save-button:hover{
+  background: chartreuse;
+}
+
+.back-button {
+  margin: 1em;
+  border-radius: 20px;
+  background-color: #ff5a5f;
+  color: white;
+}
+
+.head {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+/* Media Queries for different screen sizes */
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 1.5em;
+  }
+
+  .slogan {
+    font-size: 0.9em;
+  }
+
+  .create-profile-button {
+    width: 80%;
+  }
+
+  .terms {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .heading {
+    font-size: 1.75em;
+  }
+
+  .slogan {
+    font-size: 1em;
+  }
+
+  .create-profile-button {
+    width: 90%;
+  }
+
+  .terms {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .heading {
+    font-size: 2em;
+  }
+
+  .slogan {
+    font-size: 1em;
+  }
+
+  .create-profile-button {
+    width: 100%;
+  }
+
+  .terms {
+    width: 75%;
+  }
+}

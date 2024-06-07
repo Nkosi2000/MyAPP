@@ -1,9 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button class="back-button" routerLink="/home">Back</ion-button>
+      <ion-button (click)="goHomePage()" class="back-button">Back</ion-button>
     </ion-buttons>
-    <ion-title class="head" >Login</ion-title>
+    <ion-title class="head">Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,17 +14,21 @@
     <ion-list>
       <ion-item>
         <ion-label position="floating">Email</ion-label>
-        <ion-input type="email" required  placeholder="example: ...John..Smith..775...@gmail.com"></ion-input>
+        <ion-input [(ngModel)]="email" name="email" type="email" required placeholder="example: ...John..Smith..775...@gmail.com"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Password</ion-label>
-        <ion-input type="password" required placeholder="example: 1me2345#"></ion-input>
+        <ion-input [(ngModel)]="password" name="password" type="password" required placeholder="example: 1me2345#"></ion-input>
       </ion-item>
     </ion-list>
     <ion-text color="primary">
-      <a class="forgot-password" routerLink="/forgotpassword">Forgot Password?</a>
+      <a (click)="goToFORGOTPASSWORD()" class="forgot-password">Forgot Password?</a>
     </ion-text>
-    <ion-button expand="full" class="login-button">Login</ion-button>
-    <ion-button expand="full" fill="outline" class="signup-button" routerLink="/signup">Sign Up</ion-button>
+    <ion-button (click)="goToHOMESECOND()" expand="full" class="login-button">Login</ion-button>
+    <ion-button (click)="goToSIGNUP()" expand="full" fill="outline" class="signup-button">Sign Up</ion-button>
+    <button class="google-signin-button" >
+      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo" class="google-logo">
+      <span>Sign in with Google</span>
+    </button>
   </div>
 </ion-content>

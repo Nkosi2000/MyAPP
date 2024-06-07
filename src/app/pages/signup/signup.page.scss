@@ -12,12 +12,12 @@
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 0.5em;
-    color: #ff5a5f;
+    color: darkblue;
   }
   
   .slogan {
     font-size: 1em;
-    color: #666;
+    color: #ff5a5f;
     margin-bottom: 1.5em;
   }
   
@@ -32,7 +32,7 @@
     width: 100%;
     max-width: 400px;
     border-radius: 20px;
-    background-color: #ff5a5f;
+    background: lightskyblue;
     color: white;
   }
   
@@ -40,13 +40,14 @@
     font-size: 0.9em;
     color: #666;
     margin-top: 1em;
-    width: 75%;
+    width: 100%;
     max-width: 400px;
     text-align: center;
   }
   
   .terms b {
     font-weight: bold;
+    color:darkblue;
   }
   
   .back-button {
@@ -61,7 +62,7 @@
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    color: #333;
+    color: white;
   }
   
   /* Media Queries for different screen sizes */

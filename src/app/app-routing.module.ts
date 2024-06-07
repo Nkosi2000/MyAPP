@@ -14,6 +14,7 @@ import { RegisterYourPharmacyPage } from './pages/register-your-pharmacy/registe
 import { HelpPage } from './pages/help/help.page';
 
 
+
 const routes: Routes = [
   {
     path: 'home',
@@ -67,16 +68,21 @@ const routes: Routes = [
     path: 'help',
     loadChildren: () => import('./pages/help/help.module').then( m => m.HelpPageModule)
   },
+
+  {
+    path: 'home-second',
+    loadChildren: () => import('./pages/home-second/home-second.module').then( m => m.HomeSecondPageModule)
+  },   
+  {
+    path: 'covid19',
+    loadChildren: () => import('./pages/covid19/covid19.module').then( m => m.Covid19PageModule)
+  },
   {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },
-  {
-    path: '**',
-    redirectTo: 'home',
-    pathMatch: 'full'
   }
+
 ];
 
 @NgModule({

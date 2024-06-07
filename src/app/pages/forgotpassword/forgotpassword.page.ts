@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 
 @Component({
@@ -9,7 +10,7 @@ import { ToastController } from '@ionic/angular';
 export class ForgotpasswordPage implements OnInit {
   email: string = "";
 
-  constructor(private toastController: ToastController) { }
+  constructor(private router: Router, private toastController: ToastController) { }
 
   async onSubmit() {
     if (this.email) {
@@ -27,5 +28,12 @@ export class ForgotpasswordPage implements OnInit {
 
   ngOnInit() {
   }
+
+  goToFORGOTPASSWORD(){
+    {this.router.navigate(['/forgotpassword']).then(() => {window.location.reload();});  
+  }}
+  goToSIGNUP(){
+    {this.router.navigate(['/signup']).then(() => {window.location.reload();});  
+  }}
 
 }

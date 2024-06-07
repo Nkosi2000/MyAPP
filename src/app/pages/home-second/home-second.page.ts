@@ -1,50 +1,41 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuController, Platform } from '@ionic/angular';
-import { FireauthService } from '../services/fireauth.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-home-second',
+  templateUrl: './home-second.page.html',
+  styleUrls: ['./home-second.page.scss'],
 })
-export class HomePage implements OnInit {
+export class HomeSecondPage implements OnInit {
 
-  constructor(private fireAuth: FireauthService,
-    private router: Router, 
-    private menu: MenuController, 
-    private platform: Platform
-  ) {}
+  image1 = 'https://img.icons8.com/?size=100&id=96378&format=png&color=000000';
+  image2 = 'https://img.icons8.com/?size=100&id=96369&format=png&color=000000';
+  image3 = 'https://img.icons8.com/?size=100&id=3KZLbUW2c5k8&format=png&color=000000';
+  image4 = 'https://img.icons8.com/?size=100&id=w2QWoSZwRbBC&format=png&color=000000';
+  image5 = 'https://img.icons8.com/?size=100&id=IqOjfaWLBgco&format=png&color=000000';
+  image6 = 'https://img.icons8.com/?size=100&id=YiP7pNVh3jYW&format=png&color=000000';
+
+  constructor(private router: Router, private menu: MenuController, private platform: Platform) { }
 
   closeMenu(event: Event){
     this.menu.close('main-content');
     event.stopPropagation();
   }
 
-  ngOnInit() { }
-
-  goLogin() {
-    this.router.navigate(['/login']);
+  ngOnInit() {
+    this.platform.backButton.subscribeWithPriority(0, () => {
+      if(this.menu.isOpen('main-content')){
+        this.menu.close('main-content');
+      }
+    });
   }
-
-  goSignUp() {
-    this.router.navigate(['/signup']);
-  }
-
-  //Logout Method
-  logout(){
-    this.fireAuth.logout();
-  }
-
-  // goToLOGIN(){
-  //   {this.router.navigate(['/login']).then(() => {window.location.reload();});  
-  // }}
-  // goToSIGNUP(){
-  //   {this.router.navigate(['/signup']).then(() => {window.location.reload();});  
-  // }}
+  goToHOMESECOND(){
+    {this.router.navigate(['/home-second']).then(() => {window.location.reload();});  
+  }}
   goToPROFILE(){
     {this.router.navigate(['/profile']).then(() => {window.location.reload();});  
-  }}  
+  }} 
   goToABOUTMEDDASH(){
     {this.router.navigate(['/about-med-dash']).then(() => {window.location.reload();});  
   }}
@@ -66,9 +57,6 @@ export class HomePage implements OnInit {
   goToREGISTERYOURPHARMACY(){
     {this.router.navigate(['/register-your-pharmacy']).then(() => {window.location.reload();});  
   }}
-  goToHOMEpage(){
-    {this.router.navigate(['/home']).then(() => {window.location.reload();});  
-  }}
   goToTERMSANDCONDITIONS(){
     {this.router.navigate(['/terms-andconditions']).then(() => {window.location.reload();});  
   }}
@@ -85,17 +73,6 @@ export class HomePage implements OnInit {
     'https://livinghealthy24.com/manager/assets/images/offer4.png',
   ];
 
-  image1 = [
-    'https://www.flaticon.com/free-icon/chat-bubbles_13874995?k=1717093363603&log-in=google',
-  ];
-  image2 = [
-    'https://www.flaticon.com/free-icon/yes_1582114?term=hand+press&page=3&position=26&origin=search&related_id=1582114',
-  ];
-  image3 = [
-    'https://www.flaticon.com/free-icon/delivery-boy_2331708?term=delivery+motorbike&page=1&position=28&origin=search&related_id=2331708',
-  ];
-  image4 = [
-    'https://www.flaticon.com/free-icon/delivery-box_6615107?term=delivery+package&page=1&position=6&origin=search&related_id=6615107',
-  ]
+
 
 }

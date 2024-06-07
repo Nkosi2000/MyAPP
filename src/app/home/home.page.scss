@@ -143,10 +143,10 @@ ion-list a:hover {
 //   --color: #da1a20;
 // }
 
-#bottom {
-  background: #fff;
-  border-top: 1px solid #e0e0e0;
-}
+// #bottom {
+//   background: #fff;
+//   border-top: 1px solid #e0e0e0;
+// }
 
 #signout-btn{
   width: 85%;
@@ -209,14 +209,14 @@ swiper-slide{
 }
 
 .BrdTitle {
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 10px;
   justify-items: center;
   align-items: start;
 }
@@ -228,8 +228,8 @@ swiper-slide{
 }
 
 .grid-item img {
-  width: 100px;
-  height: 100px;
+  width: 25%;
+  height: 25%;
   object-fit: contain;
 }
 
@@ -270,6 +270,12 @@ swiper-slide{
     margin:auto;
     padding:auto;
     border-radius:auto;
+  }
+  .Board {
+    text-align: center;
+    width:auto;
+    margin: 2px 4px 2px 4px;
+    padding: 2px 4px 2px 4px;
   }
 }
 
