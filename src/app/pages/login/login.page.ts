@@ -52,11 +52,11 @@ export class LoginPage implements OnInit {
   }
 
   goToSIGNUP() {
-    this.router.navigate(['/signup']);
+    this.router.navigate(['/signup']).then(() => {window.location.reload();});
   }
 
   goToFORGOTPASSWORD() {
-    this.router.navigate(['/forgotpassword']);
+    this.router.navigate(['/forgotpassword']).then(() => {window.location.reload();});
     }
 
   goToHOMESECOND() {

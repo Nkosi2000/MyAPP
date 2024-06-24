@@ -25,26 +25,26 @@ export class ProfilePage implements OnInit{
   }
 
   goToHOMESECOND(){
-    {this.router.navigate(['/home-second']);  
+    {this.router.navigate(['/home-second']).then(() => {window.location.reload();});  
   }}
   goToCARDPAYMENT(){
-    {this.router.navigate(['/card-payment']);  
+    {this.router.navigate(['/card-payment']).then(() => {window.location.reload();});  
   }}
   goToORDERHISTORY(){
-    {this.router.navigate(['/order-history']);  
+    {this.router.navigate(['/order-history']).then(() => {window.location.reload();});  
   }}
   goToFAQS(){
-    {this.router.navigate(['/faqs']);  
+    {this.router.navigate(['/faqs']).then(() => {window.location.reload();});  
   }}  
   goToABOUTMEDDASH(){
-    {this.router.navigate(['/about-med-dash']);  
+    {this.router.navigate(['/about-med-dash']).then(() => {window.location.reload();});  
   }} 
   goToTERMSANDCONDITIONS(){
-    {this.router.navigate(['/terms-andconditions']);  
+    {this.router.navigate(['/terms-andconditions']).then(() => {window.location.reload();});  
   }}
   
   goToHELP(){
-    {this.router.navigate(['/help']);  
+    {this.router.navigate(['/help']).then(() => {window.location.reload();});  
   }}
 
 
